@@ -12,9 +12,9 @@ import java.util.Date;
 
 @Service
 public class JwtService {
-    private String SECRET;
-    private SecretKey key;
-    private long EXPIRATION_TIME;
+    private final String SECRET;
+    private final SecretKey key;
+    private final long EXPIRATION_TIME;
 
     public JwtService(@Value("${jwt.secret}") String SECRET, @Value("${jwt.expiration}") long EXPIRATION_TIME) {
         this.SECRET = SECRET;

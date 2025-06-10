@@ -1,12 +1,8 @@
 package fr.diginamic.spring_security.contoller;
 
 import fr.diginamic.spring_security.dto.LoginRequestDto;
-import fr.diginamic.spring_security.entity.UserApp;
 import fr.diginamic.spring_security.exception.AuthException;
 import fr.diginamic.spring_security.service.AuthService;
-import fr.diginamic.spring_security.service.JwtService;
-import fr.diginamic.spring_security.service.UserAppService;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
